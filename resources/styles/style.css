@@ -44,7 +44,7 @@ main {
     grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
     padding: 1em;
     gap: 1em;
-    justify-content: start;
+    justify-content: center;
     align-items: flex-start;
     overflow: scroll;
     overflow-x: hidden;
@@ -105,7 +105,7 @@ main::-webkit-scrollbar {
     border: 1px solid rgba(255, 255, 255, 0.3);
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     padding: 0.75em;
     gap: 0.5em;
 }
@@ -235,7 +235,7 @@ main::-webkit-scrollbar {
 }
 
 .current {
-    background-color: rgba(255, 158, 215, 0.4);
+    background-color: rgba(0, 0, 0, 0.016);
     border-radius: 1em;
 }
 
