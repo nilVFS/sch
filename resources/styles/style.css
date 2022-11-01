@@ -28,24 +28,27 @@ header {
     border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
+a:hover {
+    filter: invert(75%);
+}
 
 main {
     margin: 0 auto;
     width: 98%;
     height: 92vh;
-    background: rgba(255, 255, 255, 0.14);
+    /* background: rgba(255, 255, 255, 0.14);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(4.2px);
     -webkit-backdrop-filter: blur(4.2px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.3); */
     margin-top: 1em;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
     padding: 1em;
     gap: 1em;
     justify-content: center;
-    align-items: flex-start;
+    align-items: stretch;
     overflow: scroll;
     overflow-x: hidden;
 }
@@ -57,10 +60,17 @@ main::-webkit-scrollbar {
 .wrapper {
     box-sizing: unset;
     width: 100%;
+    background: rgba(255, 255, 255, 0.14);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4.2px);
+    -webkit-backdrop-filter: blur(4.2px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
+
 .status {
-    width: 100%;
+    width: 96%;
     height: 2em;
     background-color: white;
     margin: 1em auto;
@@ -90,12 +100,10 @@ main::-webkit-scrollbar {
     width: 100%;
     margin: 1em auto;
     border-radius: 1em;
-    border-bottom: 1px solid rgba(255, 255, 255, 1);
 }
 
 .card {
-    width: 98%;
-    min-height: 300px;
+    width: 96%;
     margin: 0.75em auto;
     border-radius: 0.75em;
     background: rgba(255, 255, 255, 0);
